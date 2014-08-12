@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class TextKeyRest - RDoc Documentation</title>
+
+<link href="./fonts.css" rel="stylesheet">
+<link href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/search_index.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searcher.js"></script>
+<script src="./js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">Object
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-perform_CreateNewCellNumberProxy">#perform_CreateNewCellNumberProxy</a>
+    
+    <li ><a href="#method-i-perform_DoesRegistrationCellNumberExist">#perform_DoesRegistrationCellNumberExist</a>
+    
+    <li ><a href="#method-i-perform_DoesRegistrationUserIDExist">#perform_DoesRegistrationUserIDExist</a>
+    
+    <li ><a href="#method-i-perform_GetTempAPI_Key">#perform_GetTempAPI_Key</a>
+    
+    <li ><a href="#method-i-perform_IssueTextKeyFromCellNumber">#perform_IssueTextKeyFromCellNumber</a>
+    
+    <li ><a href="#method-i-perform_IssueTextKeyFromUserId">#perform_IssueTextKeyFromUserId</a>
+    
+    <li ><a href="#method-i-perform_PollForIncomingTextKey">#perform_PollForIncomingTextKey</a>
+    
+    <li ><a href="#method-i-perform_RemoveTempAPIKey">#perform_RemoveTempAPIKey</a>
+    
+    <li ><a href="#method-i-perform_ValidateTextKeyFromCellNumber">#perform_ValidateTextKeyFromCellNumber</a>
+    
+    <li ><a href="#method-i-perform_ValidateTextKeyFromUserId">#perform_ValidateTextKeyFromUserId</a>
+    
+    <li ><a href="#method-i-perform_getTextKeyRegistration">#perform_getTextKeyRegistration</a>
+    
+    <li ><a href="#method-i-perform_registerTextKeyUser">#perform_registerTextKeyUser</a>
+    
+    <li ><a href="#method-i-perform_registerTextKeyUserCSA">#perform_registerTextKeyUserCSA</a>
+    
+    <li ><a href="#method-i-sendAPIRequest">#sendAPIRequest</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-TextKeyRest">
+  <h1 id="class-TextKeyRest" class="class">
+    class TextKeyRest
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(authKey, displayInfo=false)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>constructor</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">authKey</span>, <span class="ruby-identifier">displayInfo</span>=<span class="ruby-keyword">false</span>)
+      <span class="ruby-comment"># Set the API Key</span>
+  <span class="ruby-ivar">@authKey</span> = <span class="ruby-identifier">authKey</span>
+      
+      <span class="ruby-comment"># Set the display options</span>
+  <span class="ruby-ivar">@displayInfo</span> = <span class="ruby-identifier">displayInfo</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-perform_CreateNewCellNumberProxy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_CreateNewCellNumberProxy</span><span
+            class="method-args">(cellNumber)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_CreateNewCellNumberProxy">#perform_CreateNewCellNumberProxy</a>
+- Send the createNewcellNumberProxy API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that was used when the user
+was registered with</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_CreateNewCellNumberProxy-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 283</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_CreateNewCellNumberProxy</span>(<span class="ruby-identifier">cellNumber</span>)              
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;createNewcellNumberProxy&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:truecellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_DoesRegistrationCellNumberExist" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_DoesRegistrationCellNumberExist</span><span
+            class="method-args">(cellNumber)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_DoesRegistrationCellNumberExist">#perform_DoesRegistrationCellNumberExist</a>
+- Send the doesRegistrationcellNumberExist API Request  and return the
+results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that was used when the user
+was registered with</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_DoesRegistrationCellNumberExist-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 261</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_DoesRegistrationCellNumberExist</span>(<span class="ruby-identifier">cellNumber</span>)               
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;doesRegistrationcellNumberExist&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:cellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_DoesRegistrationUserIDExist" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_DoesRegistrationUserIDExist</span><span
+            class="method-args">(userID, isHashed)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_DoesRegistrationUserIDExist">#perform_DoesRegistrationUserIDExist</a>
+- Send the <a
+href="TextKeyRest.html#method-i-perform_DoesRegistrationUserIDExist">#perform_DoesRegistrationUserIDExist</a>
+API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>userID</code> -&gt; The unique identifier that was used when the user
+was registered with</p>
+</li><li>
+<p><code>isHashed</code> -&gt; Indicates if the userID was hashed before the
+user was registered.</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_DoesRegistrationUserIDExist-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 238</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_DoesRegistrationUserIDExist</span>(<span class="ruby-identifier">userID</span>, 
+                                        <span class="ruby-identifier">isHashed</span>)             
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;doesRegistrationUserIdExist&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:userID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">userID</span>, <span class="ruby-value">:isHashed</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">isHashed</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_GetTempAPI_Key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_GetTempAPI_Key</span><span
+            class="method-args">(minutesDuration)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_GetTempAPI_Key">#perform_GetTempAPI_Key</a>
+- Sends the gettempAPIKey API Request and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>minutesDuration</code> -&gt; The number of minutes that this API key
+will be valid</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li><li>
+<p><strong>Raises</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_GetTempAPI_Key-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_GetTempAPI_Key</span>(<span class="ruby-identifier">minutesDuration</span>)
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;gettempAPIKey&quot;</span>;
+      
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:minutesDuration</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">minutesDuration</span> } }
+      
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_IssueTextKeyFromCellNumber" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_IssueTextKeyFromCellNumber</span><span
+            class="method-args">(cellNumber)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_IssueTextKeyFromCellNumber">#perform_IssueTextKeyFromCellNumber</a>
+- Send the issueTextKeyFromcellNumber API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that was used when the user
+was registered with</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_IssueTextKeyFromCellNumber-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 329</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_IssueTextKeyFromCellNumber</span>(<span class="ruby-identifier">cellNumber</span>)            
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;issueTextKeyFromcellNumber&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:cellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_IssueTextKeyFromUserId" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_IssueTextKeyFromUserId</span><span
+            class="method-args">(userID, isHashed)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_IssueTextKeyFromUserId">#perform_IssueTextKeyFromUserId</a>
+- Send the <a
+href="TextKeyRest.html#method-i-perform_IssueTextKeyFromUserId">#perform_IssueTextKeyFromUserId</a>
+API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>userID</code> -&gt; The unique identifier that was used when the user
+was registered with</p>
+</li><li>
+<p><code>isHashed</code> -&gt; Indicates if the userID was hashed before the
+user was registered.</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_IssueTextKeyFromUserId-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 186</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_IssueTextKeyFromUserId</span>(<span class="ruby-identifier">userID</span>, 
+                                   <span class="ruby-identifier">isHashed</span>)          
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;issueTextKeyFromUserId&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:userID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">userID</span>, <span class="ruby-value">:isHashed</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">isHashed</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_PollForIncomingTextKey" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_PollForIncomingTextKey</span><span
+            class="method-args">(textKey)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_PollForIncomingTextKey">#perform_PollForIncomingTextKey</a>
+- Send the pollForIncomingTextKey API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>TextKey</code> -&gt; The TextKey to check for</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_PollForIncomingTextKey-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 351</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_PollForIncomingTextKey</span>(<span class="ruby-identifier">textKey</span>)           
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;pollForIncomingTextKey&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:textKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKey</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_RemoveTempAPIKey" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_RemoveTempAPIKey</span><span
+            class="method-args">(tempAPIKey, minutesDuration)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_RemoveTempAPIKey">#perform_RemoveTempAPIKey</a>
+- Send the removetempAPIKey API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>tempAPIKey</code> -&gt; The temporary API Key to remove</p>
+</li><li>
+<p><code>minutesDuration</code> -&gt; This parameter is ignored but still must
+still be passed in with an integer value</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_RemoveTempAPIKey-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 306</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_RemoveTempAPIKey</span>(<span class="ruby-identifier">tempAPIKey</span>,
+                             <span class="ruby-identifier">minutesDuration</span>)         
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;removetempAPIKey&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tempAPIKey</span>, <span class="ruby-value">:minutesDuration</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">minutesDuration</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_ValidateTextKeyFromCellNumber" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_ValidateTextKeyFromCellNumber</span><span
+            class="method-args">(cellNumber, textKey, textKeyVC)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_ValidateTextKeyFromCellNumber">#perform_ValidateTextKeyFromCellNumber</a>
+- Send the validateTextKeyFromcellNumber API Request  and return the
+results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that was used when the user
+was registered with</p>
+</li><li>
+<p><code>TextKey</code> -&gt; The TextKey to check for</p>
+</li><li>
+<p><code>TextKeyVC</code> -&gt; The TextKey Validation Code to check for</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_ValidateTextKeyFromCellNumber-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 403</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_ValidateTextKeyFromCellNumber</span>(<span class="ruby-identifier">cellNumber</span>,
+                                          <span class="ruby-identifier">textKey</span>,
+                                          <span class="ruby-identifier">textKeyVC</span>)          
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;validateTextKeyFromcellNumber&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:cellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span>, <span class="ruby-value">:textKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKey</span>, <span class="ruby-value">:validationCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKeyVC</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_ValidateTextKeyFromUserId" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_ValidateTextKeyFromUserId</span><span
+            class="method-args">(userID, textKey, textKeyVC, isHashed)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_ValidateTextKeyFromUserId">#perform_ValidateTextKeyFromUserId</a>
+- Send the validateTextKeyFromUserId API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>userID</code> -&gt; The unique identifier that was used when the user
+was registered with</p>
+</li><li>
+<p><code>TextKey</code> -&gt; The TextKey to check for</p>
+</li><li>
+<p><code>TextKeyVC</code> -&gt; The TextKey Validation Code to check for</p>
+</li><li>
+<p><code>isHashed</code> -&gt; Indicates if the userID was hashed before the
+user was registered.</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_ValidateTextKeyFromUserId-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 376</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_ValidateTextKeyFromUserId</span>(<span class="ruby-identifier">userID</span>,
+                                      <span class="ruby-identifier">textKey</span>,
+                                      <span class="ruby-identifier">textKeyVC</span>,
+                                      <span class="ruby-identifier">isHashed</span>)               
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;validateTextKeyFromUserId&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:userID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">userID</span>, <span class="ruby-value">:textKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKey</span>, <span class="ruby-value">:validationCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKeyVC</span>, <span class="ruby-value">:isHashed</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">isHashed</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_getTextKeyRegistration" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_getTextKeyRegistration</span><span
+            class="method-args">(retrieveBy, cellNumber, suppl1, suppl2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_IssueTextKeyFromUserId">#perform_IssueTextKeyFromUserId</a>
+- Send the <a
+href="TextKeyRest.html#method-i-perform_IssueTextKeyFromUserId">#perform_IssueTextKeyFromUserId</a>
+API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>retrieveBy</code> -&gt; Defines the type of retrieve option to use</p>
+</li><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that you are registering</p>
+</li><li>
+<p><code>suppl1</code> -&gt; The suppl1 field value that you are searching for</p>
+</li><li>
+<p><code>suppl2</code> -&gt; The suppl2 field value that you are searching fo</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_getTextKeyRegistration-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 212</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_getTextKeyRegistration</span>(<span class="ruby-identifier">retrieveBy</span>,
+                                   <span class="ruby-identifier">cellNumber</span>, 
+                                   <span class="ruby-identifier">suppl1</span>, 
+                                   <span class="ruby-identifier">suppl2</span>)            
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;getTextKeyRegistration&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:retrieveBy</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">retrieveBy</span>, <span class="ruby-value">:cellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span>, <span class="ruby-value">:suppl1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">suppl1</span>, <span class="ruby-value">:suppl2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">suppl2</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_registerTextKeyUser" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_registerTextKeyUser</span><span
+            class="method-args">(command, cellNumber, ownerFName, ownerLName, suppl1, suppl2, userID, isHashed, pinCode, distressPinCode, textKeyMode, receiveMode)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_registerTextKeyUser">#perform_registerTextKeyUser</a>
+- Send the <a
+href="TextKeyRest.html#method-i-perform_registerTextKeyUser">#perform_registerTextKeyUser</a>
+API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>command</code> -&gt; The register command</p>
+</li><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that you are registering</p>
+</li><li>
+<p><code>ownerFName</code> -&gt; User&#39;s First Name</p>
+</li><li>
+<p><code>ownerLName</code> -&gt; User&#39;s Last Name</p>
+</li><li>
+<p><code>suppl1</code> -&gt; An additional identifier chosen by the customer</p>
+</li><li>
+<p><code>suppl2</code> -&gt; Another additional identifier chosen by the
+customer</p>
+</li><li>
+<p><code>userID</code> -&gt; The user id that the end user has entered on the
+web site login page</p>
+</li><li>
+<p><code>isHashed</code> -&gt; Is the user id hashed</p>
+</li><li>
+<p><code>pinCode</code> -&gt; The numeric Pin Code</p>
+</li><li>
+<p><code>distressPinCode</code> -&gt; The numeric Distress Pin Code</p>
+</li><li>
+<p><code>textKeyMode</code> -&gt; The TextKey validation mode</p>
+</li><li>
+<p><code>receiveMode</code> -&gt; The TextKey receive mode</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_registerTextKeyUser-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_registerTextKeyUser</span>(<span class="ruby-identifier">command</span>, <span class="ruby-identifier">cellNumber</span>, <span class="ruby-identifier">ownerFName</span>, <span class="ruby-identifier">ownerLName</span>, <span class="ruby-identifier">suppl1</span>, <span class="ruby-identifier">suppl2</span>, <span class="ruby-identifier">userID</span>, <span class="ruby-identifier">isHashed</span>, <span class="ruby-identifier">pinCode</span>, <span class="ruby-identifier">distressPinCode</span>, <span class="ruby-identifier">textKeyMode</span>, <span class="ruby-identifier">receiveMode</span>)            
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;registerTextKeyUser&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:command</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">command</span>, <span class="ruby-value">:cellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span>, <span class="ruby-value">:ownerFName</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ownerFName</span>, <span class="ruby-value">:ownerLName</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ownerLName</span>, <span class="ruby-value">:suppl1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">suppl1</span>, <span class="ruby-value">:suppl2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">suppl2</span>, <span class="ruby-value">:userID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">userID</span>, <span class="ruby-value">:isHashed</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">isHashed</span>, <span class="ruby-value">:pinCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pinCode</span>, <span class="ruby-value">:distresspinCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">distressPinCode</span>, <span class="ruby-value">:textKeyMode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKeyMode</span>, <span class="ruby-value">:receiveMode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">receiveMode</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-perform_registerTextKeyUserCSA" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">perform_registerTextKeyUserCSA</span><span
+            class="method-args">(command, cellNumber, ownerFName, ownerLName, suppl1, suppl2, ownerBirthDate, gender, userID, isHashed, pinCode, distressPinCode, q1, a1, q2, a2, q3, a3, textKeyMode, receiveMode)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="TextKeyRest.html#method-i-perform_registerTextKeyUserCSA">#perform_registerTextKeyUserCSA</a>
+- Send the <a
+href="TextKeyRest.html#method-i-perform_registerTextKeyUserCSA">#perform_registerTextKeyUserCSA</a>
+API Request  and return the results</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>command</code> -&gt; The register command</p>
+</li><li>
+<p><code>cellNumber</code> -&gt; The Cell Number that you are registering</p>
+</li><li>
+<p><code>ownerFName</code> -&gt; User&#39;s First Name</p>
+</li><li>
+<p><code>ownerLName</code> -&gt; User&#39;s Last Name</p>
+</li><li>
+<p><code>suppl1</code> -&gt; An additional identifier chosen by the customer</p>
+</li><li>
+<p><code>suppl2</code> -&gt; Another additional identifier chosen by the
+customer</p>
+</li><li>
+<p><code>ownerBirthDate</code> -&gt; Users birth date. The format should be
+MM/DD/YYYY (i.e. 12/25/1984)</p>
+</li><li>
+<p><code>gender</code> -&gt; The users gender. The values should be either M
+or F.</p>
+</li><li>
+<p><code>userID</code> -&gt; The user id that the end user has entered on the
+web site login page</p>
+</li><li>
+<p><code>isHashed</code> -&gt; Is the user id hashed</p>
+</li><li>
+<p><code>pinCode</code> -&gt; The numeric Pin Code</p>
+</li><li>
+<p><code>q1</code> -&gt; The first user profile question.</p>
+</li><li>
+<p><code>a1</code> -&gt; The answer to the first user question.</p>
+</li><li>
+<p><code>q2</code> -&gt; The second user profile question.</p>
+</li><li>
+<p><code>a2</code> -&gt; The answer to the second user question.</p>
+</li><li>
+<p><code>q3</code> -&gt; The third user profile question.</p>
+</li><li>
+<p><code>a3</code> -&gt; The answer to the third user question.</p>
+</li><li>
+<p><code>textKeyMode</code> -&gt; The TextKey validation mode</p>
+</li><li>
+<p><code>receiveMode</code> -&gt; The TextKey receive mode.</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="perform_registerTextKeyUserCSA-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 144</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">perform_registerTextKeyUserCSA</span>(<span class="ruby-identifier">command</span>,
+                                   <span class="ruby-identifier">cellNumber</span>, 
+                                   <span class="ruby-identifier">ownerFName</span>, 
+                                   <span class="ruby-identifier">ownerLName</span>, 
+                                   <span class="ruby-identifier">suppl1</span>, 
+                                   <span class="ruby-identifier">suppl2</span>, 
+                                   <span class="ruby-identifier">ownerBirthDate</span>, 
+                                   <span class="ruby-identifier">gender</span>,                                                                                         
+                                   <span class="ruby-identifier">userID</span>, 
+                                   <span class="ruby-identifier">isHashed</span>, 
+                                   <span class="ruby-identifier">pinCode</span>, 
+                                   <span class="ruby-identifier">distressPinCode</span>, 
+                                   <span class="ruby-identifier">q1</span>, 
+                                   <span class="ruby-identifier">a1</span>, 
+                                   <span class="ruby-identifier">q2</span>, 
+                                   <span class="ruby-identifier">a2</span>, 
+                                   <span class="ruby-identifier">q3</span>, 
+                                   <span class="ruby-identifier">a3</span>, 
+                                   <span class="ruby-identifier">textKeyMode</span>, 
+                                   <span class="ruby-identifier">receiveMode</span>)               
+
+  <span class="ruby-comment"># Build the URL</span>
+  <span class="ruby-identifier">resturl</span> = <span class="ruby-constant">TextkeyRest</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">TK_BASE</span>[<span class="ruby-value">:rest_url</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;registerTextKeyUser&quot;</span>;
+              
+  <span class="ruby-comment"># Setup the payload</span>
+  <span class="ruby-identifier">restpayload</span> = { <span class="ruby-value">:DataIn</span>  =<span class="ruby-operator">&gt;</span> { <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@authKey</span>, <span class="ruby-value">:command</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">command</span>, <span class="ruby-value">:cellNumber</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cellNumber</span>, <span class="ruby-value">:ownerFName</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ownerFName</span>, <span class="ruby-value">:ownerLName</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ownerLName</span>, <span class="ruby-value">:suppl1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">suppl1</span>, <span class="ruby-value">:suppl2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">suppl2</span>, <span class="ruby-value">:ownerBirthDate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ownerBirthDate</span>, <span class="ruby-value">:ownergender</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">gender</span>, <span class="ruby-value">:userID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">userID</span>, <span class="ruby-value">:isHashed</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">isHashed</span>, <span class="ruby-value">:pinCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pinCode</span>, <span class="ruby-value">:distresspinCode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">distressPinCode</span>, <span class="ruby-value">:q1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">q1</span>, <span class="ruby-value">:a1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">a1</span>, <span class="ruby-value">:q2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">q2</span>, <span class="ruby-value">:a2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">a2</span>, <span class="ruby-value">:q3</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">q3</span>, <span class="ruby-value">:a3</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">a3</span>, <span class="ruby-value">:textKeyMode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">textKeyMode</span>, <span class="ruby-value">:receiveMode</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">receiveMode</span> } }
+              
+  <span class="ruby-comment"># Make the API request</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">resturl</span>, <span class="ruby-identifier">restpayload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-sendAPIRequest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sendAPIRequest</span><span
+            class="method-args">(url, postdata)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>performs the POST request</p>
+<ul><li>
+<p><strong>Args</strong> :</p>
+<ul><li>
+<p><code>url</code> -&gt; The TextKey REST URL</p>
+</li><li>
+<p><code>postdata</code> -&gt; The post data for the request</p>
+</li></ul>
+</li><li>
+<p><strong>Returns</strong> :</p>
+<ul><li>
+<p>+The returned JSON payload as a string</p>
+</li></ul>
+</li><li>
+<p><strong>Raises</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="sendAPIRequest-source">
+            <pre><span class="ruby-comment"># File lib/textkey_rest/textkey.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">sendAPIRequest</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">postdata</span>)
+  <span class="ruby-comment"># If show flag is set show the parameters</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@displayInfo</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;url: &#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">url</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Payload:&#39;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">pretty_generate</span> <span class="ruby-identifier">postdata</span>
+  <span class="ruby-keyword">end</span>
+      
+  <span class="ruby-comment"># Send the API request</span>
+  <span class="ruby-identifier">response</span> = <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">post</span>(<span class="ruby-identifier">url</span>, 
+                             <span class="ruby-identifier">postdata</span>.<span class="ruby-identifier">to_json</span>, 
+                             <span class="ruby-value">:content_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;application/json&#39;</span>)
+
+  <span class="ruby-comment"># If show flag is set show the return payload</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@displayInfo</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Results:&#39;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">pretty_generate</span> <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">response</span>)
+  <span class="ruby-keyword">end</span>
+      
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
